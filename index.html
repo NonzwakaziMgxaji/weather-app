@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wireframe to HTML/CSS</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div
+      class="container-sm rounded-5 mt-5 px-5 py-2 w-75 bg-image"
+      style="background-image: url('/images/sky.jpg');"
+    >
+      <div class="row">
+        <div class="col-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-search"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+            />
+          </svg>
+        </div>
+
+        <form id="searchcity-form">
+          <input
+            type="text"
+            id="input-city"
+            placeholder="Type a city..."
+            autocomplete="off"
+            autofocus="on"
+          />
+          <input type="submit" id="search-btn" value="Search" />
+        </form>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <button id="current-weather" class="btn btn-primary me-md-2" type="button">Current</button>
+          <!-- <button class="btn btn-primary" type="button">Button</button> -->
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="col-12 mt-5">
+            <h1 id="city-name" class="fw-bold">Cape Town</h1>
+          </div>
+          <div class="col-12">
+            <h6 id="country" class="fw-semibold">
+              Western Cape, South Africa
+            </h6>
+          </div>
+          <div class="col-12">
+            <p id="current-date-time" class="fs-6 fw-light">
+              Thursday, 11 May 2023
+            </p>
+          </div>
+          <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+          <svg
+            height="64px"
+            style="
+              shape-rendering: geometricPrecision;
+              text-rendering: geometricPrecision;
+              image-rendering: optimizeQuality;
+              fill-rule: evenodd;
+              clip-rule: evenodd;
+            "
+            version="1.1"
+            width="64px"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <defs>
+              <style type="text/css">
+                <![CDATA[
+                 .fil1 {fill:#1AB5ED}
+                 .fil0 {fill:#FFC106}
+                 .fil2 {fill:#FFC106;fill-rule:nonzero}
+                ]]>
+              </style>
+            </defs>
+            <g id="Layer_x0020_1">
+              <g id="_743750784">
+                <path
+                  class="fil0"
+                  d="M41.27 18.66c6.89,1.84 10.98,8.92 9.13,15.81 -0.65,2.43 -1.95,4.51 -3.66,6.11 -1.51,-2.79 -4.45,-4.68 -7.84,-4.68 -0.55,0 -1.09,0.04 -1.61,0.14 -1.82,-4.8 -6.39,-8.25 -11.79,-8.42 1.92,-6.79 8.94,-10.79 15.77,-8.96z"
+                />
+                <path
+                  class="fil1"
+                  d="M12.29 53.71l-0.1 0c-3.85,0 -6.97,-3.11 -6.97,-6.96 0,-3.81 3.05,-6.9 6.85,-6.97 0.45,-6.8 6.1,-12.17 13.02,-12.17 5.58,0 10.34,3.5 12.2,8.43 0.52,-0.1 1.06,-0.14 1.61,-0.14 4.52,0 8.27,3.38 8.83,7.75 2.78,0 5.03,2.26 5.03,5.03 0,2.74 -2.19,4.97 -4.91,5.03l-0.12 0 -0.07 0 -8.67 0 -0.09 0 -0.12 0 -13.56 0 -0.13 0 -0.14 0 -12.66 0z"
+                />
+                <path
+                  class="fil2"
+                  d="M55.52 39.85c0.6,0.34 0.8,1.11 0.46,1.7 -0.34,0.6 -1.1,0.8 -1.7,0.46l-1.73 -1c-0.59,-0.34 -0.8,-1.1 -0.46,-1.7 0.35,-0.59 1.11,-0.8 1.7,-0.46l1.73 1zm-35.18 -17.44c-0.6,-0.34 -0.8,-1.1 -0.46,-1.7 0.34,-0.59 1.1,-0.8 1.7,-0.46l1.73 1c0.59,0.34 0.8,1.1 0.45,1.7 -0.34,0.6 -1.1,0.8 -1.69,0.46l-1.73 -1zm6.71 -7.63c-0.34,-0.6 -0.13,-1.36 0.46,-1.7 0.6,-0.34 1.36,-0.14 1.7,0.46l1 1.73c0.34,0.59 0.13,1.36 -0.46,1.7 -0.6,0.34 -1.36,0.13 -1.7,-0.46l-1 -1.73zm9.63 -3.25c0,-0.69 0.56,-1.25 1.25,-1.25 0.69,0 1.25,0.56 1.25,1.25l0 2c0,0.69 -0.56,1.25 -1.25,1.25 -0.69,0 -1.25,-0.56 -1.25,-1.25l0 -2zm9.97 2c0.35,-0.59 1.11,-0.79 1.7,-0.45 0.6,0.35 0.8,1.11 0.46,1.7l-1 1.73c-0.35,0.6 -1.11,0.8 -1.71,0.46 -0.59,-0.35 -0.79,-1.11 -0.45,-1.71l1 -1.73zm7.63 6.72c0.6,-0.34 1.36,-0.13 1.7,0.46 0.34,0.6 0.14,1.36 -0.46,1.7l-1.73 1c-0.59,0.34 -1.35,0.14 -1.7,-0.46 -0.34,-0.6 -0.13,-1.36 0.46,-1.7l1.73 -1zm3.25 9.63c0.69,0 1.25,0.56 1.25,1.25 0,0.69 -0.56,1.25 -1.25,1.25l-2 0c-0.69,0 -1.25,-0.56 -1.25,-1.25 0,-0.69 0.56,-1.25 1.25,-1.25l2 0z"
+                />
+              </g>
+            </g>
+          </svg>
+          <div id="description" class="col-12 fs-6 fw-semibold">Partly cloudy</div>
+        </div>
+        <div class="col-6">
+          <div class="row">
+            <div class="col-12 mt-5">
+              <h1 id="temperature" class="temperature fw-bold">17°C</h1>
+            </div>
+            <!-- <div class="col-12">
+              <p id="temperature-unit" class="fs-6 fw-bold">
+                <a href="" class="link" id="celcius">°C</a> | <a href="" class="link" id="fahrenheit">°F</a>
+              </p>
+            </div> -->
+            <div id="humidity" class="col-12"></div>
+            <div id="wind" class="col-12"></div>
+          </div>
+        </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="row">
+            <div class="col-3">Hourly</div>
+            <div class="col-3">Daily</div>
+            <div class="col-3">Details</div>
+            <div class="col-3">Precipitation</div>
+          </div>
+        </div>
+        <hr />
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <div class="row">
+            <div class="col-12">FRIDAY</div>
+            <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+            <svg
+              height="64px"
+              style="
+                shape-rendering: geometricPrecision;
+                text-rendering: geometricPrecision;
+                image-rendering: optimizeQuality;
+                fill-rule: evenodd;
+                clip-rule: evenodd;
+              "
+              version="1.1"
+              width="64px"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <defs>
+                <style type="text/css">
+                  <![CDATA[
+                   .str0 {stroke:#FFC106;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:22.9256}
+                   .fil1 {fill:none}
+                   .fil0 {fill:#FFC106}
+                  ]]>
+                </style>
+              </defs>
+              <g id="Layer_x0020_1">
+                <g id="_866321920">
+                  <circle
+                    class="fil0"
+                    r="22.97"
+                    transform="matrix(0.543121 0.145529 -0.145529 0.543121 32.0002 31.9993)"
+                  />
+                  <path
+                    class="fil1 str0"
+                    d="M32 12.4c0,1.52 0,2 0,2m-9.8 0.63c0.76,1.32 1,1.73 1,1.73m-8.17 5.44c1.32,0.76 1.73,1 1.73,1m-4.36 8.8c1.53,0 2,0 2,0m0.63 9.8c1.32,-0.76 1.73,-1 1.73,-1m5.44 8.17c0.76,-1.32 1,-1.73 1,-1.73m8.8 4.36c0,-1.53 0,-2 0,-2m9.8 -0.63c-0.76,-1.32 -1,-1.73 -1,-1.73m8.17 -5.44c-1.32,-0.76 -1.73,-1 -1.73,-1m4.36 -8.8c-1.53,0 -2,0 -2,0m-0.63 -9.8c-1.32,0.76 -1.73,1 -1.73,1m-5.44 -8.17c-0.76,1.32 -1,1.73 -1,1.73"
+                  />
+                </g>
+              </g>
+            </svg>
+            <div class="col-12">20°</div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="row">
+            <div class="col-12">SATURDAY</div>
+            <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+            <svg
+              height="64px"
+              style="
+                shape-rendering: geometricPrecision;
+                text-rendering: geometricPrecision;
+                image-rendering: optimizeQuality;
+                fill-rule: evenodd;
+                clip-rule: evenodd;
+              "
+              version="1.1"
+              width="64px"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <defs>
+                <style type="text/css">
+                  <![CDATA[
+                   .fil1 {fill:#1AB5ED}
+                   .fil0 {fill:#FFC106}
+                   .fil2 {fill:#FFC106;fill-rule:nonzero}
+                  ]]>
+                </style>
+              </defs>
+              <g id="Layer_x0020_1">
+                <g id="_743750784">
+                  <path
+                    class="fil0"
+                    d="M41.27 18.66c6.89,1.84 10.98,8.92 9.13,15.81 -0.65,2.43 -1.95,4.51 -3.66,6.11 -1.51,-2.79 -4.45,-4.68 -7.84,-4.68 -0.55,0 -1.09,0.04 -1.61,0.14 -1.82,-4.8 -6.39,-8.25 -11.79,-8.42 1.92,-6.79 8.94,-10.79 15.77,-8.96z"
+                  />
+                  <path
+                    class="fil1"
+                    d="M12.29 53.71l-0.1 0c-3.85,0 -6.97,-3.11 -6.97,-6.96 0,-3.81 3.05,-6.9 6.85,-6.97 0.45,-6.8 6.1,-12.17 13.02,-12.17 5.58,0 10.34,3.5 12.2,8.43 0.52,-0.1 1.06,-0.14 1.61,-0.14 4.52,0 8.27,3.38 8.83,7.75 2.78,0 5.03,2.26 5.03,5.03 0,2.74 -2.19,4.97 -4.91,5.03l-0.12 0 -0.07 0 -8.67 0 -0.09 0 -0.12 0 -13.56 0 -0.13 0 -0.14 0 -12.66 0z"
+                  />
+                  <path
+                    class="fil2"
+                    d="M55.52 39.85c0.6,0.34 0.8,1.11 0.46,1.7 -0.34,0.6 -1.1,0.8 -1.7,0.46l-1.73 -1c-0.59,-0.34 -0.8,-1.1 -0.46,-1.7 0.35,-0.59 1.11,-0.8 1.7,-0.46l1.73 1zm-35.18 -17.44c-0.6,-0.34 -0.8,-1.1 -0.46,-1.7 0.34,-0.59 1.1,-0.8 1.7,-0.46l1.73 1c0.59,0.34 0.8,1.1 0.45,1.7 -0.34,0.6 -1.1,0.8 -1.69,0.46l-1.73 -1zm6.71 -7.63c-0.34,-0.6 -0.13,-1.36 0.46,-1.7 0.6,-0.34 1.36,-0.14 1.7,0.46l1 1.73c0.34,0.59 0.13,1.36 -0.46,1.7 -0.6,0.34 -1.36,0.13 -1.7,-0.46l-1 -1.73zm9.63 -3.25c0,-0.69 0.56,-1.25 1.25,-1.25 0.69,0 1.25,0.56 1.25,1.25l0 2c0,0.69 -0.56,1.25 -1.25,1.25 -0.69,0 -1.25,-0.56 -1.25,-1.25l0 -2zm9.97 2c0.35,-0.59 1.11,-0.79 1.7,-0.45 0.6,0.35 0.8,1.11 0.46,1.7l-1 1.73c-0.35,0.6 -1.11,0.8 -1.71,0.46 -0.59,-0.35 -0.79,-1.11 -0.45,-1.71l1 -1.73zm7.63 6.72c0.6,-0.34 1.36,-0.13 1.7,0.46 0.34,0.6 0.14,1.36 -0.46,1.7l-1.73 1c-0.59,0.34 -1.35,0.14 -1.7,-0.46 -0.34,-0.6 -0.13,-1.36 0.46,-1.7l1.73 -1zm3.25 9.63c0.69,0 1.25,0.56 1.25,1.25 0,0.69 -0.56,1.25 -1.25,1.25l-2 0c-0.69,0 -1.25,-0.56 -1.25,-1.25 0,-0.69 0.56,-1.25 1.25,-1.25l2 0z"
+                  />
+                </g>
+              </g>
+            </svg>
+            <div class="col-12">18°</div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="row">
+            <div class="col-12">SUNDAY</div>
+            <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+            <?xml version="1.0" ?>
+            <svg height="64px" xmlns="http://www.w3.org/2000/svg">
+              <title />
+              <g id="Rain">
+                <path
+                  d="M55.9775,28.2549A12.015,12.015,0,0,0,44,17a12.1931,12.1931,0,0,0-1.68.1162,14.9911,14.9911,0,0,0-27.458,1.8848A8.01,8.01,0,0,0,7,27a7.8027,7.8027,0,0,0,.0537.9165A9.0632,9.0632,0,0,0,2,36a8.8759,8.8759,0,0,0,1.2188,4.5083A1,1,0,0,0,4.08,41H59.74a.9993.9993,0,0,0,.8194-.4268A7.942,7.942,0,0,0,62,36,8.03,8.03,0,0,0,55.9775,28.2549Z"
+                  style="fill: #7cc9f2;"
+                />
+                <path
+                  d="M9.6016,44.5684c-.3448.37-3.3682,3.6894-3.3682,6.3315a4.1,4.1,0,1,0,8.2,0c0-2.6421-3.0244-5.9619-3.3691-6.332A1.0311,1.0311,0,0,0,9.6016,44.5684Z"
+                  style="fill: #b2ebf2;"
+                />
+                <path
+                  d="M24.2686,44.5684C23.9238,44.938,20.9,48.2578,20.9,50.9a4.1,4.1,0,1,0,8.1992,0c0-2.6421-3.0234-5.9619-3.3682-6.3315A1.03,1.03,0,0,0,24.2686,44.5684Z"
+                  style="fill: #b2ebf2;"
+                />
+                <path
+                  d="M38.2686,44.5684C37.9238,44.938,34.9,48.2578,34.9,50.9a4.1,4.1,0,1,0,8.1992,0c0-2.6421-3.0234-5.9619-3.3682-6.3315A1.03,1.03,0,0,0,38.2686,44.5684Z"
+                  style="fill: #b2ebf2;"
+                />
+                <path
+                  d="M54.3984,44.5684a1,1,0,0,0-1.4629,0c-.3447.37-3.3691,3.69-3.3691,6.332a4.1,4.1,0,1,0,8.2,0C57.7666,48.2578,54.7432,44.938,54.3984,44.5684Z"
+                  style="fill: #b2ebf2;"
+                />
+              </g>
+            </svg>
+            <div class="col-12">14°</div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="row">
+            <div class="col-12">MONDAY</div>
+            <?xml version="1.0" ?><svg
+              height="64px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title />
+              <g id="Rain">
+                <path
+                  d="M55.9775,28.2549A12.015,12.015,0,0,0,44,17a12.1931,12.1931,0,0,0-1.68.1162,14.9911,14.9911,0,0,0-27.458,1.8848A8.01,8.01,0,0,0,7,27a7.8027,7.8027,0,0,0,.0537.9165A9.0632,9.0632,0,0,0,2,36a8.8759,8.8759,0,0,0,1.2188,4.5083A1,1,0,0,0,4.08,41H59.74a.9993.9993,0,0,0,.8194-.4268A7.942,7.942,0,0,0,62,36,8.03,8.03,0,0,0,55.9775,28.2549Z"
+                  style="fill: #7cc9f2;"
+                />
+                <path
+                  d="M9.6016,44.5684c-.3448.37-3.3682,3.6894-3.3682,6.3315a4.1,4.1,0,1,0,8.2,0c0-2.6421-3.0244-5.9619-3.3691-6.332A1.0311,1.0311,0,0,0,9.6016,44.5684Z"
+                  style="fill: #b2ebf2;"
+                />
+                <path
+                  d="M24.2686,44.5684C23.9238,44.938,20.9,48.2578,20.9,50.9a4.1,4.1,0,1,0,8.1992,0c0-2.6421-3.0234-5.9619-3.3682-6.3315A1.03,1.03,0,0,0,24.2686,44.5684Z"
+                  style="fill: #b2ebf2;"
+                />
+                <path
+                  d="M38.2686,44.5684C37.9238,44.938,34.9,48.2578,34.9,50.9a4.1,4.1,0,1,0,8.1992,0c0-2.6421-3.0234-5.9619-3.3682-6.3315A1.03,1.03,0,0,0,38.2686,44.5684Z"
+                  style="fill: #b2ebf2;"
+                />
+                <path
+                  d="M54.3984,44.5684a1,1,0,0,0-1.4629,0c-.3447.37-3.3691,3.69-3.3691,6.332a4.1,4.1,0,1,0,8.2,0C57.7666,48.2578,54.7432,44.938,54.3984,44.5684Z"
+                  style="fill: #b2ebf2;"
+                />
+              </g>
+            </svg>
+            <div class="col-12">15°</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+body {
+  color: #ffffff;
+}
+
+.temperature {
+  font-size: 90px;
+  margin: 0;
+  padding: 0;
+}
+
+#temperature-unit,
+.link {
+  color: purple;
+  text-decoration: none;
+  /* color: #1ab5ed; */
+}
