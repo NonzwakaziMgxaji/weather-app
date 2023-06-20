@@ -14,3 +14,13 @@ body {
   text-decoration: none;
   /* color: #1ab5ed; */
 }
+
+.github-link {
+  text-decoration: none;
+  color: #0b5ed7;
+}
+
+small {
+  color: #000000;
+  text-align: center;
+}
